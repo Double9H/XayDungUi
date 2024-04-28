@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../Store/cal.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display">
+            <div id="display_input"></div>
+            <br>
+            <div id="display_output"></div>
+        </div>
+        <button class="button" id="buttonClearEntry" onclick="clearDisplay()">CE</button>
+        <button class="button" id="buttonDelete" onclick="deleteDisplay()">Del</button>
+        <button class="button button_operator" onclick="addDisplay('+')">+</button>
+        <button class="button button_operator" onclick="addDisplay('-')">-</button>
+        <button class="button button_operator" onclick="addDisplay('*')">*</button>
+        <button class="button button_operator" onclick="addDisplay('/')">/</button>
+        <button class="button button_number" onclick="addDisplay('0')">0</button>
+        <button class="button button_number" onclick="addDisplay('1')">1</button>
+        <button class="button button_number" onclick="addDisplay('2')">2</button>
+        <button class="button button_number" onclick="addDisplay('3')">3</button>
+        <button class="button button_number" onclick="addDisplay('4')">4</button>
+        <button class="button button_number" onclick="addDisplay('5')">5</button>
+        <button class="button button_number" onclick="addDisplay('6')">6</button>
+        <button class="button button_number" onclick="addDisplay('7')">7</button>
+        <button class="button button_number" onclick="addDisplay('8')">8</button>
+        <button class="button button_number" onclick="addDisplay('9')">9</button>
+        <button class="button button_dot" onclick="addDisplay('.')">.</button>
+        <button class="button button_equal" onclick="calculator()">=</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
